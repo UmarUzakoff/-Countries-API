@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries API</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__container container flex">
+            <h2 class="header__text">Where is the world?</h2>
+            <p class="switcher__theme flex">
+                <i class="ri-moon-line change__theme"></i>
+                <span>Dark mode</span>
+            </p>
+        </div>
+    </header>
+
+    <section class="countries__section hide">
+        <div class="container">
+            <div class="input__section">
+                <div class="search__section">
+                    <i class="ri-search-line search__icon"></i>
+                    <input type="text" placeholder="Search for a country..." class="search">
+                </div>
+                <div class="filter">
+                    <select name="filter" id="filter" class="Region">
+                        <option value="">Filter by Region</option>
+                        <option value="Africa">Africa</option>
+                        <option value="America">America</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="countries">
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="details__section">
+        <div class="container">
+            <button class="button btn"><i class="ri-arrow-left-line"></i> back</button>
+            <div class="country__details">
+                <div class="countries__image">
+                    <img src="https://flagcdn.com/ma.svg" alt="" />
+                </div>
+                <div class="country__info">
+                    <h1 class="title__datail">Uzbekistan</h1>
+                    <div class="infomation">
+                        <ul class="first__info">
+                            <li>Native Name: <span>Uzbekistan</span></li>
+                            <li>Population: <span>123423524</span></li>
+                            <li>Region: <span>Asia</span></li>
+                            <li>Sub Region: <span>Central Asia</span></li>
+                            <li>Capital: <span>Tashkent</span></li>
+                        </ul>
+                        <ul class="second__info">
+                            <li>Top Level Domain: <span>uz</span></li>
+                            <li>Currencies: <span>SUM</span></li>
+                            <li>Languages: <span>KZ, KG, TJ</span></li>
+                        </ul>
+                    </div>
+                    <div class="border__countries">
+                        <p>Border Countries: </p>
+                        <div class="border__buttons">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/details.js"></script>
+</body>
+</html>
